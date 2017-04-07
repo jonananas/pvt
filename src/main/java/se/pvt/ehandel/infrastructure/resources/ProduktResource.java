@@ -1,4 +1,4 @@
-package se.pvt.ehandel.server;
+package se.pvt.ehandel.infrastructure.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

@@ -4,12 +4,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Test;
 
+import se.pvt.ehandel.infrastructure.persistence.ProduktkatalogImpl;
 import se.pvt.ehandel.produkt.domain.Produkt;
-import se.pvt.ehandel.produkt.domain.Produktkatalog;
 
 public class ProduktkatalogTest {
 	
-	Produktkatalog produktkatalog = Produktkatalog.skapa();
+	ProduktKatalog produktkatalog = ProduktkatalogImpl.skapa();
 	Produkt produkt123 = Produkt.skapa("123");
 	
 	@Test
