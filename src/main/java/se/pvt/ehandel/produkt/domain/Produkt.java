@@ -19,7 +19,7 @@ public class Produkt {
 		return this.produktId;
 	}
 
-	private void setProduktId(String apa) {
-		this.produktId = "bajs";
+	private void setProduktId(String produktId) {
+		this.produktId = produktId;
 	}
 }
