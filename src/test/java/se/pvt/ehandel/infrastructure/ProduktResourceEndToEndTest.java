@@ -32,15 +32,15 @@ public class ProduktResourceEndToEndTest {
 	public void shouldNotGetProdukt() throws Exception {
 
 		given().
-			param("id", "123").
+			port(8080).
 		when().
-			get("/produkter").
+			get("/produkter/123").
 		then().
 			statusCode(204);
 	}
 	
 	@Test
-	public void shouldGetAddedProdukt() throws Exception {
+	public void shouldAddProdukt() throws Exception {
 		
 		given().
 			body("{\"produktId\":\"123\"}").
@@ -49,15 +49,32 @@ public class ProduktResourceEndToEndTest {
 			post("/produkter").
 		then().
 			statusCode(200);
+	}
+	
+	@Test
+	public void shouldGetAddedProdukt() throws Exception {
+		
+		shouldAddProdukt();
 		
 		given().
-			param("id", "123").
+		when().
+			get("/produkter/123").
+		then().
+			statusCode(200).
+			and().
+			body(Matchers.containsString("123"));
+	}
+	
+	@Test
+	public void shouldGetProdukter() throws Exception {
+		
+		given().
 		when().
 			get("/produkter").
 		then().
 			statusCode(200).
 			and().
-			body(Matchers.containsString("123"));
+			body(Matchers.startsWith("["));
 	}
 
 }
