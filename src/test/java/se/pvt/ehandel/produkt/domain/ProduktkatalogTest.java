@@ -4,8 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Test;
 
-import se.pvt.ehandel.infrastructure.persistence.ProduktkatalogImpl;
-import se.pvt.ehandel.produkt.domain.Produkt;
+import se.pvt.ehandel.produkt.infrastructure.persistence.ProduktkatalogImpl;
 
 public class ProduktkatalogTest {
 	
@@ -34,5 +33,4 @@ public class ProduktkatalogTest {
 		
 		assertThat(produktkatalog.sökProduktId("123")).isNull();
 	}
-	
 }

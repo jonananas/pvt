@@ -1,2 +1,3 @@
-# pvt-2016
-Temporary distro
+# pvt
+Example code, slides, and lists from the pvt-course.
+

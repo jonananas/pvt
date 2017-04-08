@@ -1,4 +1,4 @@
-package se.pvt.ehandel.infrastructure.resources;
+package se.pvt.ehandel.produkt.infrastructure.resources;
 
 import java.util.Collection;
 
@@ -10,13 +10,13 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import se.pvt.ehandel.infrastructure.persistence.ProduktkatalogImpl;
 import se.pvt.ehandel.produkt.domain.Produkt;
 import se.pvt.ehandel.produkt.domain.ProduktKatalog;
+import se.pvt.ehandel.produkt.domain.ProduktkatalogSingleton;
 
 @Path("produkter")
 public class ProduktResource {
-	static ProduktKatalog produkter = new ProduktkatalogImpl();
+	static ProduktKatalog produkter = ProduktkatalogSingleton.get();
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)

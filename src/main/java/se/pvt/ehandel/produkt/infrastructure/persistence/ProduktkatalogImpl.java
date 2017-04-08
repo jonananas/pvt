@@ -1,4 +1,4 @@
-package se.pvt.ehandel.infrastructure.persistence;
+package se.pvt.ehandel.produkt.infrastructure.persistence;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -10,6 +10,9 @@ import se.pvt.ehandel.produkt.domain.ProduktKatalog;
 public class ProduktkatalogImpl implements ProduktKatalog {
 	
 	Map<String, Produkt> produkter = new HashMap<>();
+	
+	private ProduktkatalogImpl() {
+	}
 
 	public static ProduktKatalog skapa() {
 		return new ProduktkatalogImpl();
@@ -29,5 +32,4 @@ public class ProduktkatalogImpl implements ProduktKatalog {
 	public Produkt sökProduktId(String produktId) {
 		return produkter.get(produktId);
 	}
-
 }

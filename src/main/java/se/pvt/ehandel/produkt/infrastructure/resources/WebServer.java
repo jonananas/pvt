@@ -1,4 +1,4 @@
-package se.pvt.ehandel.infrastructure.resources;
+package se.pvt.ehandel.produkt.infrastructure.resources;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;

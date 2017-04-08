@@ -1,4 +1,4 @@
-package se.pvt.ehandel.infrastructure;
+package se.pvt.ehandel.produkt.infrastructure;
 
 import static com.jayway.restassured.RestAssured.given;
 
@@ -9,7 +9,7 @@ import org.hamcrest.Matchers;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import se.pvt.ehandel.infrastructure.resources.ProduktResource;
+import se.pvt.ehandel.produkt.infrastructure.resources.ProduktResource;
 
 public class ProduktResourceEndToEndTest {
 	static ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
