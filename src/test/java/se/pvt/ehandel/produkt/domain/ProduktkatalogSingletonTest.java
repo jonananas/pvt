@@ -4,6 +4,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Test;
 
+import se.pvt.ehandel.produkt.infrastructure.persistence.ProduktkatalogSingleton;
+
 public class ProduktkatalogSingletonTest {
 
 	@Test

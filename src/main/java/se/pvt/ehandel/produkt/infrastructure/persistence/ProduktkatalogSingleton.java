@@ -1,6 +1,6 @@
-package se.pvt.ehandel.produkt.domain;
+package se.pvt.ehandel.produkt.infrastructure.persistence;
 
-import se.pvt.ehandel.produkt.infrastructure.persistence.ProduktkatalogImpl;
+import se.pvt.ehandel.produkt.domain.ProduktKatalog;
 
 public class ProduktkatalogSingleton {
 	

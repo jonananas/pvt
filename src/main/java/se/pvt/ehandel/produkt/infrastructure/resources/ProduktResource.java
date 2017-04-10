@@ -12,7 +12,7 @@ import javax.ws.rs.core.MediaType;
 
 import se.pvt.ehandel.produkt.domain.Produkt;
 import se.pvt.ehandel.produkt.domain.ProduktKatalog;
-import se.pvt.ehandel.produkt.domain.ProduktkatalogSingleton;
+import se.pvt.ehandel.produkt.infrastructure.persistence.ProduktkatalogSingleton;
 
 @Path("produkter")
 public class ProduktResource {
