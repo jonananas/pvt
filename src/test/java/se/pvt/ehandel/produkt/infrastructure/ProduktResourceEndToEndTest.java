@@ -13,11 +13,11 @@ import org.junit.Test;
 import se.pvt.ehandel.produkt.infrastructure.resources.ProduktResource;
 
 public class ProduktResourceEndToEndTest {
-	static ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
 	private static int port = -1;
 	
 	@BeforeClass
 	public static void startServer() throws Exception {
+		ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
 		context.setContextPath("/");
 		Server jettyServer = new Server(0);
 		jettyServer.setHandler(context);
