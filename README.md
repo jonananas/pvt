@@ -10,4 +10,8 @@ You can also run
 
     mvn exec:java
 
-to start the webserver
+to start the webserver.
+
+# Architecture example from slides
+
+![architecture example](docs/architecture_example.jpg)
