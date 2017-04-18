@@ -55,9 +55,14 @@
 			<artifactId>jersey-container-jetty-http</artifactId>
 			<version>${jersey.version}</version>
 		</dependency>
-		<dependency>
+		<dependency> <!-- JSON entity providers -->
 			<groupId>org.glassfish.jersey.media</groupId>
 			<artifactId>jersey-media-moxy</artifactId>
+			<version>${jersey.version}</version>
+		</dependency>
+		<dependency> <!-- Needed for file uploads -->
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-multipart</artifactId>
 			<version>${jersey.version}</version>
 		</dependency>
 
