@@ -47,7 +47,7 @@ public class ProduktResourceEndToEndTest {
 		
 		given().
 			port(port).
-			body("{\"produktId\":\"123\"}").
+			body("{\"produktId\":\"123\",\"namn\":\"Sandwich\"}").
 			header("Content-Type", "application/json").
 		when().
 			post("/produkter").

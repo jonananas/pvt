@@ -3,23 +3,33 @@ package se.pvt.ehandel.produkt.domain;
 public class Produkt {
 	
 	String produktId;
-	
-	private Produkt() {
+    private String namn;
+
+    private Produkt() {
 	}
 
-	private Produkt(String produktId) {
+	private Produkt(String produktId, String namn) {
 		setProduktId(produktId);
+		setNamn(namn);
 	}
 
-	public static Produkt skapa(String produktId) {
-		return new Produkt(produktId);
+	public static Produkt av(String produktId, String namn) {
+		return new Produkt(produktId, namn);
 	}
 
 	public String getProduktId() {
 		return this.produktId;
 	}
 
-	private void setProduktId(String produktId) {
+    public String getNamn() {
+        return namn;
+    }
+
+    private void setProduktId(String produktId) {
 		this.produktId = produktId;
 	}
+
+	private void setNamn(String namn) {
+	    this.namn = namn;
+    }
 }

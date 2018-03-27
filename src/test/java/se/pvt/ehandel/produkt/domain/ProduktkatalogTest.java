@@ -9,7 +9,7 @@ import se.pvt.ehandel.produkt.infrastructure.persistence.ProduktkatalogImpl;
 public class ProduktkatalogTest {
 	
 	ProduktKatalog produktkatalog = ProduktkatalogImpl.skapa();
-	Produkt produkt123 = Produkt.skapa("123");
+	Produkt produkt123 = Produkt.av("123", "Mellanmjölk");
 	
 	@Test
 	public void skaInnehållaTillagdaProdukter() throws Exception {
